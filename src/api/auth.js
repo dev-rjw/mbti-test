@@ -22,11 +22,10 @@ export const getUserProfile = async (token) => {
 };
 
 export const updateProfile = async (token, formData) => {
-    const response = await axios.fetch(`${API_URL}/profile`, {
+    const response = await axios.patch(`${API_URL}/profile`, formData, {
         headers: {
             Authorization: `Bearer ${token}`,
         },
-        formData,
     });
     return response;
 };
