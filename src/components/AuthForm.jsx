@@ -10,12 +10,15 @@ const AuthForm = ({ mode, onSubmit }) => {
 
     const handleChange = (e) => {
         e.preventDefault();
-        setFormData(e.target.value);
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        onSubmit();
+        onSubmit(formData);
     };
 
     return (
