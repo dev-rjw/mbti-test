@@ -8,3 +8,6 @@
     -   실행 : yarn json-server db.json --port 4000
 -   tanstack query 설치 : yarn add @tanstack/react-query @tanstack/react-query-devtools
 -   axios 설치 : yarn add axios
+-   tailwind css 설치 : yarn add -D tailwindcss postcss autoprefixer
+    -   tailwind.config.js 파일 생성 : npx tailwindcss init -p
+-   react-router-dom 설치 : yarn add react-router-dom
