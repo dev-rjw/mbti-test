@@ -20,7 +20,7 @@ const Profile = ({ user, setUser }) => {
     return (
         <div>
             <div>
-                <h1>프로필 수정</h1>
+                <h1 className="text-3xl font-bold text-primary-color mb-6 text-center">프로필 수정</h1>
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label>닉네임</label>

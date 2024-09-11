@@ -17,11 +17,14 @@ const Signup = () => {
     return (
         <div>
             <div>
-                <h1>회원가입</h1>
+                <h1 className="text-3xl font-bold text-primary-color mb-6 text-center">회원가입</h1>
                 <AuthForm mode="signup" onSubmit={handleSignup} />
                 <div>
                     <p>
-                        이미 계정이 있으신가요? <Link to="/login">로그인</Link>
+                        이미 계정이 있으신가요?{" "}
+                        <Link to="/login" className="text-red-600">
+                            로그인
+                        </Link>
                     </p>
                 </div>
             </div>
